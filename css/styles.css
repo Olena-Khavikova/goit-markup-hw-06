@@ -225,7 +225,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero-button {
+.primary-button {
   padding: 10px 32px;
   min-width: 200px;
   min-height: 50px;
@@ -241,7 +241,7 @@ img {
   line-height: 1.88px;
 }
 
-.hero-button:hover {
+.primary-button:hover {
   cursor: pointer;
 }
 .visually-hidden {
@@ -742,4 +742,15 @@ img {
 }
 
 .form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
