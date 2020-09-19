@@ -738,19 +738,113 @@ img {
 
 .icon-close {
   --color2: rgba(0, 0, 0, 0.1);
-  --color3: #000000;
+}
+
+.icon-close:hover {
+  fill: var(--accent-color);
+  cursor: pointer;
 }
 
 .form {
   display: flex;
   flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+
+  width: 528px;
 }
 
 .form-field {
-  display: block;
+  display: flex;
+
+  flex-direction: column;
+  margin: 0px;
   width: 100%;
+}
+
+.form-field input:hover {
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.form-field input {
+  margin: 0px;
+  padding: 14px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
   border-radius: 4px;
+
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.form-field textarea {
+  margin: 0px;
+  padding: 14px;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-field textarea:hover {
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.form-field textarea::placeholder {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.form-field label {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.form-button {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 448px;
+}
+
+input[type="checkbox"] {
+}
+
+.conditions {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.conditions label {
+  margin-left: 8.4px;
+}
+
+.conditions .link {
+  color: var(--accent-color);
+  text-decoration: underline;
 }

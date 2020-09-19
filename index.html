@@ -549,8 +549,8 @@
             <use href="./images/icons/sprite.svg#icon-close"></use>
           </svg>
         </a>
-        <p>Оставьте свои данные, мы вам перезвоним</p>
         <form class="form">
+          <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
           <div class="form-field">
             <label for="name">Имя</label>
             <input type="text" name="name" id="name" />
@@ -568,21 +568,17 @@
 
           <div class="form-field">
             <label for="comment">Комментарий</label>
-            <textarea
-              name="comment"
-              id="comment"
-              placeholder="Введите текст"
-              cols="30"
-              rows="10"
-            >
+            <textarea name="comment" id="comment" placeholder="Введите текст">
             </textarea>
           </div>
-          <input type="checkbox" name="conditions" id="conditions" />
-          <label for="conditions">
-            Соглашаюсь с рассылкой и принимаю
-            <a href="_blank">Условия договора</a>
-          </label>
-          <div>
+          <div class="conditions">
+            <input type="checkbox" name="conditions" id="conditions" />
+            <label for="conditions">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="link" href="_blank">Условия договора</a>
+            </label>
+          </div>
+          <div class="form-button">
             <button class="primary-button" type="submit">Отправить</button>
           </div>
         </form>
