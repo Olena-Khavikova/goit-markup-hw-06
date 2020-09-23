@@ -36,7 +36,9 @@ img {
 }
 
 .container {
-  max-width: 1600px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1600px;
   padding-left: 215px;
   padding-right: 215px;
   margin-left: auto;
@@ -44,6 +46,7 @@ img {
 
   background-color: var(--primary-white-color);
 }
+
 .title {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -634,11 +637,6 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .footer-element {
